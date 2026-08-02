@@ -5,20 +5,20 @@ class Solution {
             if(s.charAt(i)=='(' || s.charAt(i)=='{'|| s.charAt(i)=='['){
                 sc.push(s.charAt(i));
             }
-            
-            else if(sc.isEmpty()){
+            else{
+                
+            if(sc.isEmpty()){
                 return false;
             }
-            else if(sc.peek()=='(' && s.charAt(i)==')'){
+            char str=s.charAt(i);
+                char top=sc.peek();
+            if(top=='(' && str!=')'||top=='{' && str!='}'||top=='[' && str!=']'){
+                return false;
+            }
+            else{
                 sc.pop();
             }
-            else if(sc.peek()=='{' && s.charAt(i)=='}'){
-                sc.pop();
             }
-            else if(sc.peek()=='[' && s.charAt(i)==']'){
-                sc.pop();
-            }else sc.push(s.charAt(i));
-            
         }
         if(sc.isEmpty()){
                 return true;
