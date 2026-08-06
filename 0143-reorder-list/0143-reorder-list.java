@@ -14,17 +14,19 @@ class Solution {
         ListNode prev=null;
         ListNode slow=head;
         ListNode fast=head;
-        while(fast!=null && fast.next!=null){
+        while(fast.next!=null && fast.next.next!=null){
             slow=slow.next;
             fast=fast.next.next;
         }
-        while(slow!=null){
-            ListNode next=slow.next;
-            slow.next=prev;
-            prev=slow;
-            slow=next;
+        ListNode second=slow.next;
+        slow.next=null;
+        while(second!=null){
+            ListNode next=second.next;
+            second.next=prev;
+            prev=second;
+            second=next;
         }
-        while(head!=null && prev.next!=null){
+        while(head!=null && prev!=null){
             ListNode hnext=head.next;
             head.next=prev; 
             head=hnext;
