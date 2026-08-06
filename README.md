@@ -63,6 +63,7 @@ A collection of LeetCode questions to ace the coding interview! - Created using 
 | ------- |
 | [0002-add-two-numbers](https://github.com/utkarshagarwal03/leetcode/tree/master/0002-add-two-numbers) |
 | [0150-evaluate-reverse-polish-notation](https://github.com/utkarshagarwal03/leetcode/tree/master/0150-evaluate-reverse-polish-notation) |
+| [3345-smallest-divisible-digit-product-i](https://github.com/utkarshagarwal03/leetcode/tree/master/3345-smallest-divisible-digit-product-i) |
 ## Range Minimum/Maximum Query
 |  |
 | ------- |
@@ -114,4 +115,8 @@ A collection of LeetCode questions to ace the coding interview! - Created using 
 |  |
 | ------- |
 | [0215-kth-largest-element-in-an-array](https://github.com/utkarshagarwal03/leetcode/tree/master/0215-kth-largest-element-in-an-array) |
+## Enumeration
+|  |
+| ------- |
+| [3345-smallest-divisible-digit-product-i](https://github.com/utkarshagarwal03/leetcode/tree/master/3345-smallest-divisible-digit-product-i) |
 <!---LeetCode Topics End-->
